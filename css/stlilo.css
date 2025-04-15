@@ -1,0 +1,219 @@
+body {
+    width: 90%;
+    align-content: center;
+    margin: 0 auto;
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    position: relative;
+    color: aliceblue;
+}
+
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none; /* Evita que afecte interacción */
+}
+
+.titulo {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    color: wheat;
+    font-size: 6vh;
+    border: 2px solid rgb(11, 11, 73);
+    background: linear-gradient(rgba(133, 133, 204, 0.342), rgba(9, 36, 192, 0.425));
+    width: 94%;
+    height: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-bar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    border-radius: 10px;
+    justify-content: center;
+    background: linear-gradient(rgba(120, 168, 223, 0.384), rgba(84, 84, 206, 0.658));
+    border: 2px solid rgb(11, 11, 73);
+    padding: 10px;
+    margin: 10px auto;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.menu {
+    padding: 10px;
+    margin: 5px;
+    background: linear-gradient(rgb(149, 202, 186), rgb(16, 162, 230));
+    color: white;
+    border: 2px solid rgb(11, 11, 73);
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+}
+
+/* 👇 Enlace sin cambio de fuente al hacer hover, active, focus */
+.menu:hover,
+.menu:active,
+.menu:focus {
+    background: linear-gradient(rgb(128, 187, 173), rgb(14, 142, 201));
+    color: white;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.imagenes {
+    border: 2px solid rgb(11, 11, 73);
+    background: linear-gradient(rgba(93, 209, 209, 0.568), rgba(181, 245, 245, 0.5));
+    width: 40%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px auto;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.ajuste {
+    margin: 2%;
+    width: 60%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.imagen {
+    border: 2px solid rgb(11, 11, 73);
+    background: linear-gradient(lightblue, rgb(35, 172, 218));
+    width: 90%;
+    height: 150px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+video {
+    margin: 1%;
+    max-width: 100%;
+}
+
+.texto2 {
+    border-radius: 10px;
+    font-size: 4vh;
+    width: 97%;
+    height: auto;
+    padding: 10px;
+    border: 2px solid black;
+    background: linear-gradient(rgb(210, 221, 221), rgb(46, 159, 204));
+}
+
+.contenedor3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+    border-radius: 10px;
+    justify-content: center;
+    background: linear-gradient(rgba(120, 168, 223, 0.521), rgba(84, 84, 206, 0.301));
+    border: 2px solid rgb(11, 11, 73);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.texto3 {
+    margin: 30px auto;
+    color: white;
+    width: 200px;
+    height: auto;
+    text-align: center;
+}
+
+.footer {
+    font-size: 4vh;
+    border: 2px solid rgb(11, 11, 73);
+    color: antiquewhite;
+    background: linear-gradient(rgb(133, 178, 214), rgb(57, 95, 221));
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 95%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* MEDIA QUERY - No afecta fondo ni fuentes */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .titulo {
+        font-size: 4vh;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .menu {
+        width: 90%;
+        text-align: center;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenes {
+        width: 90%;
+    }
+
+    .imagen {
+        width: 100%;
+        height: auto;
+    }
+
+    .texto2 {
+        font-size: 3vh;
+        width: 100%;
+    }
+
+    .contenedor3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        font-size: 3vh;
+        width: 100%;
+        text-align: center;
+    }
+}
